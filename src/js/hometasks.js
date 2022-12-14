@@ -6,7 +6,7 @@
 // ****
 // *****
 // ******
-
+/* 
 let result = "";
 const length = 7;
 
@@ -18,8 +18,8 @@ for (let i=1; i<length; i++) {
     result += "\n";
 }
 
-console.log(result);
-
+console.log(result); */
+/* 
 first: for (let i=0; i<3; i++) {
     console.log(`First level: ${i}`);
     for (let j=0; j<3; j++) {
@@ -29,49 +29,39 @@ first: for (let i=0; i<3; i++) {
             console.log(`Third level: ${k}`);
         }
     }
-}
+} */
 
 // ЗАДАЧИ_УРОК 23_УСЛОВИЯ И ЦИКЛЫ
 // 1
-let i=5;
+/* let i=5;
 do {
     console.log(i);
     i++;
 }
-while (i<11);
+while (i<11); */
 // 2
-for (let i=20; i>9; i--) {
+/* for (let i=20; i>9; i--) {
     console.log(i);
         if (i===13) break;
-}
+} */
 // 3
-for (let i=2; i<11; i++) {
+/* for (let i=2; i<11; i++) {
     if (i%2==0) {
     console.log(i);
     }
-}
+} */
 //4
-for (let i = 2; i <= 16; i++) {
+/* for (let i = 2; i <= 16; i++) {
     if (i % 2 === 0) {
         continue;
     } else {
         console.log(i);
     }
-}
+} */
 
-let i=2;
 
-while (i<17) {
-    if (i % 2 === 0) {
-        i++;
-        continue;
-    } else {
-        console.log(i);
-    }
-    i++;
-}
 //5
-const arrayA = [];
+/* const arrayA = [];
 
     for (i=5; i<11; i++) {
         arrayA[i-5]=i;
@@ -83,13 +73,13 @@ return arrayA;
 let num = 20;
 
 function showFirstMessage(text) {
-    console.log(text);
+    console.log(text); */
  /*    let num = 10; */
-    console.log(num);
+/*     console.log(num);
 }
 
 showFirstMessage("The World is mine!");
-console.log(num);
+console.log(num); */
 
 /* function calc(a, b) {
     return  (a + b);
@@ -99,7 +89,7 @@ console.log(calc(4, 3));
 console.log(calc(5, 6));
 console.log(calc(10, 6)); */
 
-function ret() {
+/* function ret() {
     let num = 50;
     return num;
 }
@@ -112,9 +102,9 @@ const logger = function() {
     console.log("Hello");
 };
 
-logger();
+logger(); */
 
-const calc = (a,b) => {return a+b};
+/* const calc = (a,b) => {return a+b};
 
 const calc = (a, b) => {
     console.log("1");
@@ -128,14 +118,14 @@ const discount = 0.9;
 function convert(amount, curr) {
     return (curr*amount);
     
-}
-
+} */
+/* 
 function promotion(result) {
-    console.log(result * discount);
-    return function(){}
-}
-
-const res = convert(500, usdCurr);
-promotion(res);
+    console.log(result * discount); */
+/*     return function(){} */
+/* }
+ */
+/* const res = convert(500, usdCurr);
+promotion(res); */
 
 
