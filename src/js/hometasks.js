@@ -59,7 +59,6 @@ while (i<11); */
     }
 } */
 
-
 //5
 /* const arrayA = [];
 
@@ -97,7 +96,6 @@ console.log(calc(10, 6)); */
 const anotherNum = ret ();
 console.log(anotherNum);
 
-
 const logger = function() {
     console.log("Hello");
 };
@@ -128,4 +126,200 @@ function promotion(result) {
 /* const res = convert(500, usdCurr);
 promotion(res); */
 
+//Задачи (урок 22) 
+//1*
+const arr = [3, 5, 8, 16, 20, 23, 50];
+const result = [];
+
+for (let i=0; i<arr.length; i++) {
+    result[i] = arr[i];
+}
+console.log(result);
+return result;
+
+//2*
+const data = [5, 10, 'Shopping', 20, 'Homework'];
+
+for (i=0; i<data.length; i++) {
+
+    if (typeof(data[i]) === "number") {
+        data[i]=data[i]*2;
+    }
+    else if (typeof(data[i]) === "string") {
+        data[i]=`${data[i]} -done`;
+    }
+}
+
+console.log(data);
+return data;
+
+//3*!!!!!!!!
+const data = [5, 10, 'Shopping', 20, 'Homework'];
+const result = [];
+
+for (let i=1; i<=data.length; i++) {
+        result[i-1] = data[data.length - i];
+    }
+console.log(result);
+return result;
+
+// ЗАДАЧА** "Ёлочка" 
+const lines = 5;
+let result = "";
+
+for (let i=0; i<6; i++) {
+    console.log("");
+    if (i=6) {
+        `${*}`;
+    } 
+    result+='\n';
+}
+console.log(result);
+return result;
+
+//ЗАДАЧИ (Урок 27) Functions
+//1
+function getName(name) {
+    return `Привет, ${name}!`;
+}
+getName('lucy');
+
+//2
+function returnNeighboringNumbers(num) {
+    return [num - 1, num, num + 1];
+}
+
+returnNeighboringNumbers(10);
+
+//3
+function getMathResult(num1, num2) {
+
+        if (typeof(num2)=="number" && a != float) {
+        return num1;
+        }
+       
+        let str="";
+
+        for (let i=1; i<=num2; i++) {
+            if (i===num2) {
+                str += `${num1*i}`;
+            }
+            else {
+                str += `${num1*i} ---`;
+            }
+    return str;
+}
+
+// str += `${num1*i}---`
+// ======
+// str = str + num*i + "---"
+
+getMathResult(5, 3);
+
+
+// Задачи
+// 7.1
+function calculateVolumeAndArea(a) {
+        if (typeof (a) !== "number" || a < 0 || !Number.isInteger(a)) {
+            console.log("При вычислении произошла ошибка");
+        }
+        else {
+
+    let str="";
+/* 
+        let V = ;
+        let S = ; */
+        str=`Объем куба: ${a*a*a}, площадь всей поверхности: ${a*a*6}`;
+        console.log(str);
+    }
+
+}
+calculateVolumeAndArea(8);
+
+//7.2
+function getCoupeNumber(p) {
+    if (typeof (p) !== "number" || p < 0 || !Number.isInteger(p)) {
+        console.log("Ошибка. Проверьте правильность введенного номера места");
+    }
+    if (p===0 || p>36) {
+        console.log("Таких мест в вагоне не существует");
+    } 
+    if (p>0 && p<5) {
+        console.log(1);
+        return 1;
+    }
+    if (p>4 && p<9) {
+        return 2;
+    }
+    if (p>8 && p<13) {
+        return 3;
+    }
+    if (p>11 && p<17) {
+        return 4;
+    }
+    if (p>15 && p<21) {
+        return 5;
+    }
+    if (p>19 && p<37) {
+        return 6;
+    }
+    if (p>23 && p<29) {
+        return 7;
+    }
+    if (p>27 && p<33) {
+        return 8;
+    }
+    if (p>31 && p<37) {
+        return 9;
+    }
+}
+
+getCoupeNumber(88);
+
+/* return Math.ceil(seatNumber / 4); */
+
+// 8.1
+function getTimeFromMinutes(a) {
+    if (typeof (a) !== "number" || a < 0 || !Number.isInteger(a)) {
+        console.log("Ошибка, проверьте данные");
+    }
+   const hours = Math.floor(a/60);
+   const minutes = a % 60; 
+   
+   let hourStr="";
+   switch (hours) {
+    case 0: 
+        hoursStr = 'часов';
+        break;
+    case 1:
+        hoursStr = 'час';
+        break;
+    case 2:
+    case 3:
+    case 4:
+        hoursStr = 'часа';
+        break;
+    default:
+        hoursStr = 'часов';
+    }
+    return `Это ${hours} ${hoursStr} и ${minutes} минут`;
+    }
+}
+
+getTimeFromMinutes(120);
+
+// 8.2
+function findMaxNumber(a, b, c, d) {
+    if (typeof (a) !== "number" ||
+        typeof (b) !== "number" || 
+        typeof (c) !== "number" || 
+        typeof (d) !== "number") {
+        return 0; 
+    } else {
+        console.log (Math.max(a, b, c, d));
+    }
+}
+
+findMaxNumber(35, 880, 100, 120);
+// 9
 
