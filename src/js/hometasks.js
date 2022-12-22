@@ -323,3 +323,108 @@ function findMaxNumber(a, b, c, d) {
 findMaxNumber(35, 880, 100, 120);
 // 9
 
+//10.1)2)3) Задача
+
+const personalPlanPeter = {
+    name: "Peter",
+    age: "29",
+    skills: {
+        languages: ['ru', 'eng'],
+        programmingLangs: {
+            js: '20%',
+            php: '10%'
+        },
+        exp: '1 month'
+    },
+    showAgeAndLangs: function(plan) {
+        const {age} = plan;
+        const {languages} = plan.skills;
+        let str = `Мне ${age} и я владею языками: `;
+
+        languages.forEach(function(lang) {
+            str += `${lang.toUpperCase()} `;
+        });
+
+        return str;
+    }
+};
+
+function showExperience(plan) {
+    const {exp} = plan.skills;
+    return exp;
+}
+
+function showProgrammingLangs(plan) {
+    let str = '';
+    const {programmingLangs} = plan.skills;
+    for (let key in programmingLangs) {
+        str += `Язык ${key} изучен на ${programmingLangs[key]}\n`
+    }
+
+    return str;
+}
+
+const family = ['Peter', 'Ann', 'Alex', 'Linda'];
+
+function showFamily(arr) {
+    let str = "";
+
+    arr.length === 0 ? str = `Семья пуста` : str = `Семья состоит из: `;
+
+    arr.forEach(member => {
+        str +=` ${member}`
+    });
+    console.log(str);
+}
+showFamily(family);
+
+/* => 'Семья состоит из: Peter Ann Alex Linda' */
+
+const favoriteCities = ['liSBon', 'ROME', 'miLan', 'Dublin'];
+
+function standardizeStrings(arr) {
+    arr.forEach(city => {
+        console.log(city.toLowerCase())
+    })
+}
+
+standardizeStrings(favoriteCities);
+
+// REVERSE
+const someString = "This is some strange string";
+
+function reverseStr(str) {
+
+    if (typeof(str) !== "string") {
+    console.log="Ошибка!";
+    }
+
+    console.log(str.split("").reverse().join(""));
+ }
+
+reverseStr(someString);
+ 
+let str = "some";
+let strObj = new String(str);
+
+console.log(typeof(str));
+console.log(typeof(strObj));
+
+const soldjer = {
+    health: 400,
+    armor: 100,
+    sayHello: function() {
+        console.log('Hello');
+    }
+};
+const john = Object.create(soldjer);
+
+// const john = {
+//   health: 100
+//};
+//Object.setPrototypeOf(john, soldjer);
+// ohn.__proto__ = soldjer;
+
+console.log(john.armor);
+john.sayHello();
+
