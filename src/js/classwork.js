@@ -1,4 +1,4 @@
-const str = "test";
+const strA = "test";
 console.log(str.length);
 
 const arr = [1, 2, 4];
@@ -266,3 +266,66 @@ console.log(typeof(Boolean("4")));
 
 console.log(typeof(!!"44444"));
 
+/* let number = 5; debugger
+
+function logNumber() {
+    let number = 4; debugger
+    console.log(number);
+}
+
+number=6;
+
+logNumber(); debugger */
+
+function createCounter() {
+    let counter = 0;
+
+    const myFunction = function() {
+        counter = counter + 1;
+        return counter;
+    }
+
+    return myFunction;
+}
+
+const increment = createCounter();
+const c1 = increment();
+const c2 = increment();
+const c3 = increment();
+
+console.log(c1, c2, c3);
+
+// РЕКУРСИЯ 
+
+function pow(x, y) {
+    let result = 1;
+
+    for (let i=0; i<n; i++) {
+        result *=x;
+    }
+    return result;
+};
+
+function pow(x, y) {
+  if (n===1) {
+    return x;
+  } else {
+    return x*pow(x, n-1);
+  }
+};
+
+const lines = 5;
+let result = "";
+
+for (let i=0; i<=lines; i++) {
+    for (let j=0; j<lines-i; j++) {
+    result +="";
+    }
+for (let j=0; j<2*i+1; j++) {
+            result += "*";
+    }
+    result += "\n";
+   
+}
+
+console.log(result);

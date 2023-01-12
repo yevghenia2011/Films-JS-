@@ -6,8 +6,8 @@
 // ****
 // *****
 // ******
-/* 
-let result = "";
+
+/* let result = "";
 const length = 7;
 
 for (let i=1; i<length; i++) {
@@ -16,6 +16,149 @@ for (let i=1; i<length; i++) {
         result += "*";
     }
     result += "\n";
+}
+
+console.log(result);
+first: for (let i=0; i<3; i++) {
+    console.log(`First level: ${i}`);
+    for (let j=0; j<3; j++) {
+        console.log(`Second level: ${j}`);
+        for (let k=0; k<3; k++) {
+            if (k===2) break first;
+            console.log(`Third level: ${k}`);
+        }
+    }
+}
+ */
+// ЗАДАЧИ_УРОК 23_УСЛОВИЯ И ЦИКЛЫ
+//1
+/* let i=5;
+do {
+    console.log(i);
+    i++;
+}
+while (i<11);
+// 2
+for (let i=20; i>9; i--) {
+    console.log(i);
+        if (i===14) break;
+}
+// 3
+for (let i=2; i<11; i++) {
+    if (i%2===0) {
+    console.log(i);
+    }
+}
+//4
+for (let i = 2; i <= 16; i++) {
+    if (i % 2 === 0) {
+        continue;
+    } else {
+        console.log(i);
+    }
+}
+
+let i=2;
+do {
+    if (i % 2 === 1){
+    console.log(i);
+    }
+    i++;
+}
+while (i<17);
+
+//5
+const arrayOfNumbers = [];
+    for (let i=5; i<11; i++) {
+        arrayOfNumbers[i-5]=i;
+    }
+console.log(arrayOfNumbers);
+
+//
+function fifthTask() {
+    const arrayOfNumbers = [];
+
+    for (let i = 5; i < 11; i++) {
+        arrayOfNumbers[i - 5] = i;
+    }
+
+    console.log(arrayOfNumbers);
+    return arrayOfNumbers;
+}
+ */
+/* fifthTask()
+
+// 1*
+function firstTask(arr) {
+
+    const arr = [3, 5, 8, 16, 20, 23, 50];
+    const result = [];
+
+    for (let i=0; i < arr.length; i++) {
+        result[i] = arr[i];
+    }
+
+    console.log(result);
+    return result;
+} */
+
+//2*
+/* function secondTask() {
+    // Значения массива менять нельзя, тут он проверяется автоматически именно на эти значения
+    const data = [5, 10, 'Shopping', 20, 'Homework'];
+
+    // Пишем решение вот тут
+    for (let i=0; i < data.length; i++) {
+    if (typeof(i)==="number") {
+        data[i]=data[i]*2;
+    } 
+    else if (typeof(i)==="string") {
+        data[i]=`${data[i] - done}`;
+    }
+}
+    // Не трогаем
+    console.log(data);
+    return data;
+}
+
+for (let i = 0; i < data.length; i++) {
+    if (typeof(data[i]) === 'number') {
+        data[i] = data[i] * 2;
+    } else if (typeof(data[i]) === 'string') {
+        data[i] = `${data[i]} - done`;
+    }
+}
+
+
+//3*
+function thirdTask() {
+    // Значения массива менять нельзя, тут он проверяется автоматически именно на эти значения
+    const data = [5, 10, 'Shopping', 20, 'Homework'];
+    const result = [];
+
+    // Пишем ре0data.length; i>0; i--) {
+        for (let i=1; i<data.length; i++) {
+            result[i-1] = data[data.length-i];
+    }
+    
+    // Не трогаем
+    console.log(result);
+    return result;
+}
+ */
+// АСТЕРИКС ЁЛОЧКА
+/* const lines = 5;
+let result = "";
+
+for (let i=0; i<=lines; i++) {
+    for (let j=0; j<lines-i; j++) {
+    result +="";
+    }
+for (let j=0; j<2*i+1; j++) {
+            result += "*";
+    }
+    result += "\n";
+   
 }
 
 console.log(result); */
@@ -31,48 +174,11 @@ first: for (let i=0; i<3; i++) {
     }
 } */
 
-// ЗАДАЧИ_УРОК 23_УСЛОВИЯ И ЦИКЛЫ
-// 1
-/* let i=5;
-do {
-    console.log(i);
-    i++;
-}
-while (i<11); */
-// 2
-/* for (let i=20; i>9; i--) {
-    console.log(i);
-        if (i===13) break;
-} */
-// 3
-/* for (let i=2; i<11; i++) {
-    if (i%2==0) {
-    console.log(i);
-    }
-} */
-//4
-/* for (let i = 2; i <= 16; i++) {
-    if (i % 2 === 0) {
-        continue;
-    } else {
-        console.log(i);
-    }
-} */
-
-//5
-/* const arrayA = [];
-
-    for (i=5; i<11; i++) {
-        arrayA[i-5]=i;
-    }
-
-console.log(arrayA);
-return arrayA;
-
-let num = 20;
+/* let num = 20;
 
 function showFirstMessage(text) {
-    console.log(text); */
+    console.log(text);
+     */
  /*    let num = 10; */
 /*     console.log(num);
 }
@@ -128,7 +234,7 @@ promotion(res); */
 
 //Задачи (урок 22) 
 //1*
-const arr = [3, 5, 8, 16, 20, 23, 50];
+/* const arr = [3, 5, 8, 16, 20, 23, 50];
 const result = [];
 
 for (let i=0; i<arr.length; i++) {
@@ -149,8 +255,8 @@ for (i=0; i<data.length; i++) {
         data[i]=`${data[i]} -done`;
     }
 }
-
-console.log(data);
+ */
+/* console.log(data);
 return data;
 
 //3*!!!!!!!!
@@ -161,10 +267,10 @@ for (let i=1; i<=data.length; i++) {
         result[i-1] = data[data.length - i];
     }
 console.log(result);
-return result;
+return result; */
 
 // ЗАДАЧА** "Ёлочка" 
-const lines = 5;
+/* const lines = 5;
 let result = "";
 
 for (let i=0; i<6; i++) {
@@ -176,13 +282,13 @@ for (let i=0; i<6; i++) {
 }
 console.log(result);
 return result;
-
+ */
 //ЗАДАЧИ (Урок 27) Functions
 //1
-function getName(name) {
+function sayHello(name) {
     return `Привет, ${name}!`;
 }
-getName('lucy');
+sayHello("Антон");
 
 //2
 function returnNeighboringNumbers(num) {
@@ -194,7 +300,7 @@ returnNeighboringNumbers(10);
 //3
 function getMathResult(num1, num2) {
 
-        if (typeof(num2)=="number" && a != float) {
+        if (typeof(num2)!== "number" || num2 <= 0) {
         return num1;
         }
        
@@ -207,7 +313,9 @@ function getMathResult(num1, num2) {
             else {
                 str += `${num1*i} ---`;
             }
+            else {
     return str;
+    }
 }
 
 // str += `${num1*i}---`
@@ -428,3 +536,18 @@ const john = Object.create(soldjer);
 console.log(john.armor);
 john.sayHello();
 
+// ФАКТОРИАЛ
+
+function factorial(n) {
+    if (!Number.isInteger(n) || typeof(n) !== "number") {
+        return "Error!";
+    } 
+    if (n<=0) {
+        return 1;
+
+    } else {
+        return n*factorial(n-1);
+    }
+};
+
+console.log(factorial(3));
